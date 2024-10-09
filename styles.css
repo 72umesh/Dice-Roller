@@ -1,0 +1,82 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #FCFAEE;
+
+}
+#title,#p{
+    color: #343131;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 25px;
+    padding: 20px;
+    width: 400px; 
+
+    box-shadow: 15px 15px 15px #800000 ;
+    background: linear-gradient(to bottom right,#B8001F,#191919);
+}
+#inputlabel{
+    font-size: 1.5em;
+}
+
+#numOfDice ,#submitbtn{
+    font-size: 1.5rem;
+    text-align: center;
+    width: 150px;
+    margin: 20px;
+    border-radius: 5px;
+}
+#numOfDice{
+    height: 1.5em;
+}
+
+#submitbtn{
+    height: 1.8em;
+    background-color: hsl(345, 100%, 45%);
+    border-color:#A02334 ;
+}
+#submitbtn:hover{
+    background-color: hsl(345, 100%, 40%);
+}
+#submitbtn:active{
+    background-color: #da0037;
+}
+#diceResult{
+    font-size: 2rem;
+}
+#diceImages img{
+    width: 100px;
+    margin: 10px; 
+}
+
+@media (max-width:700px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        width: 85%;
+        max-width: 85%;
+        max-height: 1000px;
+    }
+    #submitbtn,#numOfDice{
+        margin: 10px;
+    }
+    #diceImages img{
+        width: 70px;
+    }
+    #diceImages,#diceResult{
+        margin: 5px;
+    }
+
+}
